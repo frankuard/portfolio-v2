@@ -3,6 +3,7 @@ import SiteNav from './components/layout/SiteNav'
 import Hero from './sections/Hero/Hero'
 import About from './sections/About/About'
 import Experience from './sections/Experience/Experience'
+import Recognition from './sections/Recognition/Recognition'
 import useReveal from './hooks/useReveal'
 
 const App = () => {
@@ -15,7 +16,8 @@ const App = () => {
         <Hero />
         <About />
         <Experience />
-        {/* next: Recognition, Stack, then Contact in the footer */}
+        <Recognition />
+        {/* next: Stack, then Contact in the footer */}
       </main>
     </div>
   )

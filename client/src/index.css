@@ -1,44 +1,63 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap");
+/* 1. Fonts must come FIRST, before the tailwind import */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+@import 'tailwindcss';
 
-@import "tailwindcss";
+/* 2. Design tokens (same values as the zip) */
+:root {
+  --alpine-950: #24130f;
+  --alpine-900: #42231c;
+  --alpine-800: #7a3825;
+  --alpine-600: #a85d3d;
+  --alpine-400: #d59a74;
+  --sky-700: #a3422c;
+  --sky-500: #dc7650;
+  --sky-200: #f5b780;
+  --snow: #eee2d6;
+  --mist: #dcc6b2;
+  --sun: #ffd27d;
+  --ink: #301a15;
+  --line: rgb(70 35 25 / 28%);
+}
 
-/* Tell Tailwind about the tokens */
+/* 3. Tell Tailwind about the tokens so classes like bg-snow, text-ink, font-mono work */
 @theme inline {
   --color-alpine-950: var(--alpine-950);
   --color-alpine-900: var(--alpine-900);
   --color-alpine-800: var(--alpine-800);
   --color-alpine-600: var(--alpine-600);
   --color-alpine-400: var(--alpine-400);
+  --color-sky-700: var(--sky-700);
+  --color-sky-500: var(--sky-500);
+  --color-sky-200: var(--sky-200);
   --color-snow: var(--snow);
   --color-mist: var(--mist);
   --color-sun: var(--sun);
   --color-ink: var(--ink);
   --color-line: var(--line);
 
-  --font-sans: var(--sans);
-  --font-serif: var(--serif);
-  --font-mono: var(--mono);
-}
+  --font-sans: 'DM Sans', sans-serif;
+  --font-serif: 'DM Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
 
-@theme {
   --breakpoint-md: 50rem;
-  --ease-soft: cubic-bezier(0.2, 0.75, 0.25, 1);
 }
 
-/* Base styles */
+/* 4. Base styles. In @layer base so Tailwind classes can still override them */
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: clip;
   }
-
   body {
     margin: 0;
+    overflow-x: clip;
     color: var(--ink);
     background: var(--snow);
-    font-family: var(--sans);
+    font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
-
+  a { color: inherit; text-decoration: none; }
+  button { color: inherit; font: inherit; }
   svg {
     width: 1.25rem;
     fill: none;
@@ -49,27 +68,7 @@
   }
 }
 
-@media (max-width: 800px) {
-  :root {
-    --container: calc(100% - 2.5rem);
-    --space-section: 6rem;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-  }
-}
-
-/* Sections fade/slide in when useReveal adds "is-visible" */
+/* 5. Sections fade/slide in when useReveal adds "is-visible" */
 .reveal {
   content-visibility: auto;
   opacity: 0;
@@ -79,5 +78,6 @@
 .reveal.is-visible { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; }
 }
