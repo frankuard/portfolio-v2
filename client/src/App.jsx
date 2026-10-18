@@ -1,6 +1,6 @@
 import React from 'react'
-import SiteNav from '@/components/layout/SiteNav'
-import BirdFlock from '@/components/effects/BirdFlock'
+import SiteNav from '../src/components/layout/SiteNav'
+import BirdFlock from '../src/components/effects/BirdFlock'
 
 const App = () => {
   return (

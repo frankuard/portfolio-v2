@@ -1,0 +1,43 @@
+/* ===== BirdFlock (hero birds) ===== */
+.bird-flock { position: absolute; z-index: 3; display: flex; gap: 1rem; color: rgb(61 26 22 / 58%); pointer-events: none; }
+.bird-flock-a { top: 18%; left: -8rem; animation: flock-fly-a 24s linear infinite; }
+.bird-flock-b { top: 34%; right: -10rem; transform: scale(.86); animation: flock-fly-b 31s linear 5s infinite; }
+.bird-flock span { position: relative; display: block; width: 2.7rem; height: 1.15rem; }
+.bird-flock span:nth-child(2) { margin-top: .75rem; animation-delay: -300ms; }
+.bird-flock span:nth-child(3) { margin-top: .15rem; animation-delay: -600ms; }
+.bird-flock span::before,.bird-flock span::after { position: absolute; top: .35rem; width: 1.5rem; height: .75rem; border-top: 3px solid currentColor; border-radius: 50%; content: ''; animation: bird-wing 700ms ease-in-out infinite alternate; }
+.bird-flock span::before { right: 50%; transform: rotate(16deg); transform-origin: right; }
+.bird-flock span::after { left: 50%; transform: rotate(-16deg); transform-origin: left; }
+@keyframes flock-fly-a { from { transform: translateX(0); } to { transform: translateX(calc(100vw + 18rem)) translateY(4rem); } }
+@keyframes flock-fly-b { from { transform: translateX(0) scale(.72); } to { transform: translateX(calc(-100vw - 16rem)) translateY(-3rem) scale(.72); } }
+@keyframes bird-wing { to { top: .4rem; transform: rotate(0); } }
+
+/* ===== MountainWorld ===== */
+.mountain-world { position: absolute; z-index: 2; right: 0; bottom: 0; left: 0; height: 45%; opacity: var(--mountain-fade); transform: translateY(var(--mountain-shift)) scale(var(--mountain-scale)); transform-origin: bottom; will-change: opacity, transform; }
+.ridge { position: absolute; right: -10%; bottom: -17%; left: -10%; height: 95%; clip-path: polygon(0 64%, 12% 48%, 22% 60%, 38% 18%, 49% 52%, 61% 35%, 72% 58%, 86% 26%, 100% 54%, 100% 100%, 0 100%); }
+.ridge-far { bottom: 8%; background: #c2775c; opacity: 0.82; transform: scale(1.08); }
+.ridge-mid { bottom: -5%; background: var(--alpine-600); clip-path: polygon(0 67%, 15% 37%, 27% 62%, 45% 25%, 56% 58%, 70% 33%, 85% 64%, 100% 42%, 100% 100%, 0 100%); }
+.ridge-near { bottom: -36%; height: 110%; background: var(--alpine-950); clip-path: polygon(0 62%, 10% 48%, 20% 58%, 31% 40%, 43% 63%, 60% 38%, 73% 58%, 89% 30%, 100% 48%, 100% 100%, 0 100%); }
+.snow { position: absolute; z-index: 2; background: rgb(255 229 194 / 70%); clip-path: polygon(50% 0, 78% 40%, 64% 33%, 57% 45%, 48% 29%, 38% 45%, 26% 40%); }
+.snow-a { bottom: 57%; left: 32%; width: 17rem; height: 7rem; }.snow-b { right: 4%; bottom: 45%; width: 15rem; height: 6rem; }
+.trail { position: absolute; z-index: 3; right: 20%; bottom: -20%; width: 9rem; height: 80%; border-left: 1px solid rgb(255 255 255 / 45%); border-radius: 50%; transform: rotate(25deg); }
+.pine { position: absolute; z-index: 4; bottom: 5%; width: 1px; height: 5rem; background: var(--snow); opacity: 0.55; }
+.pine::before,.pine::after { position: absolute; bottom: 48%; width: 2.7rem; height: 1px; background: inherit; content: ''; transform: rotate(40deg); transform-origin: left; }
+.pine::after { left: 1px; transform: rotate(140deg); }.pine-a{left:7%}.pine-b{left:15%;bottom:1%;transform:scale(.65)}.pine-c{right:10%;bottom:5%;transform:scale(1.25)}.pine-d{right:24%;bottom:0;transform:scale(.7)}
+
+/* ===== AmbientBirds (faint birds in other sections) ===== */
+.ambient-birds { position: absolute; z-index: 0; top: 12%; display: flex; gap: .75rem; color: var(--alpine-800); opacity: .1; pointer-events: none; }
+.ambient-birds-right { right: 5%; }.ambient-birds-left { left: 5%; transform: scale(.82); }
+.ambient-birds span { position: relative; display: block; width: 2.5rem; height: 1rem; }
+.ambient-birds span:nth-child(2) { margin-top: 1rem; }.ambient-birds span:nth-child(3) { margin-top: .2rem; }
+.ambient-birds span::before,.ambient-birds span::after { position: absolute; top: .3rem; width: 1.4rem; height: .7rem; border-top: 2px solid currentColor; border-radius: 50%; content: ''; }
+.ambient-birds span::before { right: 50%; transform: rotate(16deg); transform-origin: right; }.ambient-birds span::after { left: 50%; transform: rotate(-16deg); transform-origin: left; }
+
+@media (max-width: 800px) {
+  .bird-flock-b { display: none; }
+  .bird-flock span { width: 2.2rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mountain-world { opacity: 1; transform: none; }
+}
