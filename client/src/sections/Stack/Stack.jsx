@@ -11,17 +11,17 @@ const Stack = () => {
   return (
     <section
       id="stack"
-      className="reveal relative bg-[linear-gradient(145deg,#e5d5c6,#d2baa5)] py-[clamp(6rem,10vw,10rem)]"
+      className="reveal relative bg-[linear-gradient(145deg,#e5d5c6,#d2baa5)] py-[clamp(3.5rem,6vw,6rem)]"
     >
       <AmbientBirds side="left" />
 
       <Container className="relative z-1">
         <SectionIndex number="04" label="Technology stack" aside="Core tools" />
 
-        <div className="flex items-end justify-between gap-12 pt-22 pb-12 max-md:flex-col max-md:items-start max-md:py-16">
+        <div className="flex items-end justify-between gap-12 pt-10 pb-8 max-md:flex-col max-md:items-start max-md:gap-6 max-md:py-8">
           <div>
             <Eyebrow>Development workflow</Eyebrow>
-            <Display className="mt-6 max-w-208">
+            <Display className="mt-4 max-w-208 text-[length:clamp(2.6rem,4.8vw,5rem)]">
               Tools I use to <em>ship products.</em>
             </Display>
           </div>
@@ -30,7 +30,7 @@ const Stack = () => {
           </p>
         </div>
 
-        <div className="grid gap-8">
+        <div className="grid gap-5">
           {stackGroups.map((group) => (
             <StackGroup key={group.name} group={group} />
           ))}

@@ -38,14 +38,14 @@ const Contact = () => {
   return (
     <footer
       id="contact"
-      className="reveal relative min-h-svh overflow-x-clip bg-alpine-950 pt-[clamp(6rem,10vw,10rem)] pb-12 text-snow after:absolute after:-right-[8%] after:bottom-0 after:h-[70%] after:w-[55%] after:bg-[repeating-radial-gradient(ellipse_at_bottom_right,transparent_0_3rem,#fff_3.05rem_3.1rem)] after:opacity-20 after:content-['']"
+      className="reveal relative overflow-x-clip bg-alpine-950 py-[clamp(3.5rem,6vw,6rem)] text-snow after:absolute after:-right-[8%] after:bottom-0 after:h-[70%] after:w-[55%] after:bg-[repeating-radial-gradient(ellipse_at_bottom_right,transparent_0_3rem,#fff_3.05rem_3.1rem)] after:opacity-20 after:content-['']"
     >
       <AmbientBirds side="right" />
 
       <Container className="relative z-2">
         <SectionIndex light number="05" label="Contact" aside="Start a conversation" />
 
-        <div className="grid grid-cols-[minmax(0,0.9fr)_minmax(26rem,0.72fr)] items-start gap-[clamp(4rem,9vw,9rem)] pt-22 pb-24 max-md:grid-cols-1 max-md:gap-14 max-md:pt-16 max-md:pb-20">
+        <div className="grid grid-cols-[minmax(0,0.9fr)_minmax(26rem,0.72fr)] items-start gap-[clamp(3rem,6vw,6rem)] pt-10 max-md:grid-cols-1 max-md:gap-10 max-md:pt-8">
           {/* left: heading, text, socials */}
           <div className="sticky top-20 max-md:static">
             <Eyebrow>Want to work together?</Eyebrow>
@@ -86,16 +86,6 @@ const Contact = () => {
 
           {/* right: the form */}
           <ContactForm />
-        </div>
-
-        {/* bottom row */}
-        <div className="flex justify-between border-t border-white/22 pt-6 font-mono text-[0.56rem] uppercase max-md:flex-col max-md:gap-4">
-          <span>© {new Date().getFullYear()} Roshan Karki</span>
-          <div className="flex gap-8 max-md:gap-4">
-            <a href={LINKEDIN} target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href={GITHUB} target="_blank" rel="noreferrer">GitHub</a>
-            <a href="#top">Back to top ↑</a>
-          </div>
         </div>
       </Container>
     </footer>

@@ -9,7 +9,7 @@ import './Hero.css'
 
 // Shared look of the two pill buttons
 const buttonBase =
-  'min-w-[9.5rem] justify-center rounded-[3rem] border border-white/58 px-[1.15rem] py-[0.9rem] font-mono text-[0.62rem] tracking-[0.06em] uppercase backdrop-blur-[0.75rem] transition-[color,background-color,border-color,transform] duration-250 hover:-translate-y-[0.2rem] max-md:min-w-auto max-md:px-4 max-md:py-[0.8rem]'
+  'min-w-[9.5rem] justify-center rounded-[3rem] border border-white/70 px-[1.25rem] py-[0.95rem] font-mono text-[0.74rem] font-semibold tracking-[0.06em] uppercase backdrop-blur-[0.75rem] transition-[color,background-color,border-color,transform] duration-250 hover:-translate-y-[0.2rem] max-md:min-w-auto max-md:px-4 max-md:py-[0.8rem]'
 
 const Hero = () => {
   const heroRef = useRef(null)
@@ -34,7 +34,7 @@ const Hero = () => {
           Roshan Karki
         </Display>
 
-        <p className="mt-6 text-center text-base leading-[1.75] font-normal text-white/86">
+        <p className="mt-5 text-center text-[length:clamp(1.3rem,2.2vw,1.85rem)] leading-[1.4] font-medium text-white">
           Full-stack developer
         </p>
 
@@ -53,7 +53,7 @@ const Hero = () => {
             </TextLink>
             <TextLink
               href="#contact"
-              className={`${buttonBase} bg-[rgb(65_26_21/12%)] hover:border-snow hover:bg-snow hover:text-ink`}
+              className={`${buttonBase} bg-[rgb(65_26_21/35%)] text-white hover:border-snow hover:bg-snow hover:text-ink`}
             >
               Contact me
             </TextLink>
