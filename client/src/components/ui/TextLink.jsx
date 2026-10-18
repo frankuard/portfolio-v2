@@ -1,10 +1,14 @@
 import React from 'react'
+import { twMerge } from 'tailwind-merge'
 import Arrow from './Arrow'
 
 const TextLink = ({ children, className = '', ...props }) => {
   return (
     <a
-      className={`group inline-flex items-center gap-[0.9rem] border-b border-current pb-[0.45rem] text-[0.78rem] ${className}`}
+      className={twMerge(
+        'group inline-flex items-center gap-[0.9rem] border-b border-current pb-[0.45rem] text-[0.78rem]',
+        className,
+      )}
       {...props}
     >
       {children}

@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap");
 
+@import "tailwindcss";
 
-/* ===== Tell Tailwind about the tokens ===== */
-/* `inline` means: bg-snow becomes background-color: var(--snow) */
+/* Tell Tailwind about the tokens */
 @theme inline {
   --color-alpine-950: var(--alpine-950);
   --color-alpine-900: var(--alpine-900);
@@ -15,29 +14,57 @@
   --color-sun: var(--sun);
   --color-ink: var(--ink);
   --color-line: var(--line);
+
   --font-sans: var(--sans);
   --font-serif: var(--serif);
   --font-mono: var(--mono);
 }
 
 @theme {
-  --breakpoint-md: 50rem;                     /* 800px, same as your design */
+  --breakpoint-md: 50rem;
   --ease-soft: cubic-bezier(0.2, 0.75, 0.25, 1);
 }
 
-/* ===== Base ===== */
-/* Inside @layer base so Tailwind classes can override these */
+/* Base styles */
 @layer base {
-  html { scroll-behavior: smooth; }
-  body { margin: 0; color: var(--ink); background: var(--snow); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
-  svg { width: 1.25rem; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    color: var(--ink);
+    background: var(--snow);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  svg {
+    width: 1.25rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
 }
 
 @media (max-width: 800px) {
-  :root { --container: calc(100% - 2.5rem); --space-section: 6rem; }
+  :root {
+    --container: calc(100% - 2.5rem);
+    --space-section: 6rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

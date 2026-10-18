@@ -1,12 +1,15 @@
 import React from 'react'
-import SiteNav from '../src/components/layout/SiteNav'
-import BirdFlock from '../src/components/effects/BirdFlock'
+import SiteNav from './components/layout/SiteNav'
+import Hero from './sections/Hero/Hero'
 
 const App = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#7a3028]">
+    <div className="overflow-hidden">
       <SiteNav />
-      <BirdFlock variant="a" />
+      <main>
+        <Hero />
+        {/* next: About, Experience, Recognition, Stack, then Contact in the footer */}
+      </main>
     </div>
   )
 }
