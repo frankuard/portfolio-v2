@@ -2,8 +2,8 @@ import React from 'react'
 import Container from '../../components/ui/Container'
 import SectionIndex from '../../components/layout/SectionIndex'
 import AmbientBirds from '../../components/effects/AmbientBirds'
-import ApiStatus from '@/components/ui/ApiStatus'
-import useApi from '@/hooks/useApi'
+import ApiStatus from '../components/ui/ApiStatus'
+import useApi from '../../hooks/useApi'
 
 const Recognition = () => {
   const { data: recognitions, loading, error } = useApi('/api/recognitions')
