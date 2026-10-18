@@ -2,6 +2,7 @@ import { Router } from 'express'
 import Experience from '../models/Experience.js'
 import Recognition from '../models/Recognition.js'
 import Education from '../models/Education.js'
+import Project from '../models/Project.js'
 
 const router = Router()
 
@@ -26,6 +27,14 @@ router.get('/education', async (req, res) => {
     res.json(await Education.find().sort({ order: 1 }))
   } catch (error) {
     res.status(500).json({ message: 'Could not load education' })
+  }
+})
+
+router.get('/projects', async (req, res) => {
+  try {
+    res.json(await Project.find().sort({ order: 1 }))
+  } catch (error) {
+    res.status(500).json({ message: 'Could not load projects' })
   }
 })
 
