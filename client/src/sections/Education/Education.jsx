@@ -42,7 +42,7 @@ const Education = () => {
                   {item.institution}
                 </p>
                 {item.description && (
-                  <p className="mt-3 mb-0 max-w-xl text-[0.85rem] leading-[1.7] text-[#765344]">
+                  <p className="mt-3 mb-0 max-w-xl text-[0.85rem] leading-[1.7] text-[#4a2418]">
                     {item.description}
                   </p>
                 )}

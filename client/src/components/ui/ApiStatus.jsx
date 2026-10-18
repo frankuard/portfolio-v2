@@ -11,7 +11,7 @@ const ApiStatus = ({ loading, error, empty }) => {
       : 'Nothing here yet.'
 
   return (
-    <p className="m-0 font-mono text-[0.72rem] tracking-[0.08em] text-[#765344] uppercase">
+    <p className="m-0 font-mono text-[0.72rem] tracking-[0.08em] text-[#4a2418] uppercase">
       {text}
     </p>
   )

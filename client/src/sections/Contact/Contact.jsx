@@ -58,9 +58,6 @@ const Contact = () => {
               Tell me a little about it and let’s see what we can build together.
             </p>
 
-            <p className="mt-8 mb-0 flex items-center gap-3 font-mono text-[0.58rem] tracking-[0.06em] text-[#d59a74] uppercase before:aspect-square before:w-[0.45rem] before:rounded-full before:bg-sun before:shadow-[0_0_0_0.3rem_rgb(255_210_125/12%)] before:content-['']">
-              Open to selected projects and collaborations.
-            </p>
 
             <div className="mt-8 flex gap-3" aria-label="Social links">
               {socials.map((item) => (

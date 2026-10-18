@@ -29,7 +29,7 @@ const Hero = () => {
       <Container className="relative z-5 origin-top pt-[23vh] opacity-(--hero-fade) will-change-[opacity,transform] [transform:translateY(var(--hero-lift))_scale(var(--hero-scale))] max-md:pt-[20vh] motion-reduce:opacity-100 motion-reduce:[transform:none]">
         <Display
           as="h1"
-          className="mx-auto max-w-[72rem] text-center text-[length:clamp(5rem,10.6vw,10.4rem)] leading-[0.84] tracking-[-0.055em] max-md:text-[length:clamp(4.2rem,19vw,6rem)] max-md:leading-[0.82]"
+          className="mx-auto max-w-[72rem] text-center text-[length:clamp(5rem,10.6vw,10.4rem)] leading-[0.84] tracking-[-0.03em] [word-spacing:0.14em] max-md:text-[length:clamp(4.2rem,19vw,6rem)] max-md:leading-[0.82]"
         >
           Roshan Karki
         </Display>
@@ -39,13 +39,13 @@ const Hero = () => {
         </p>
 
         <div className="mx-auto mt-[0.35rem] flex w-[min(42rem,100%)] flex-col items-center gap-6 max-md:w-full">
-          <p className="m-0 max-w-[31rem] text-center text-base leading-[1.75] font-light">
+          <p className="m-0 max-w-[31rem] text-center text-base leading-[1.75] font-light ">
             I build reliable web products across frontend, backend, databases, and deployment.
           </p>
 
           <div className="flex flex-none gap-6 max-md:gap-3">
             <TextLink
-              href="/roshan-karki-cv.txt"
+                            href="https://ik.imagekit.io/ltf9bjszh/Portfolio/Roshan%20Karki%20CV.pdf?ik-attachment=true"
               download
               className={`${buttonBase} bg-snow text-ink hover:border-alpine-950 hover:bg-alpine-950 hover:text-snow`}
             >
@@ -80,7 +80,7 @@ const Hero = () => {
         </div>
 
         <strong className="mt-[0.7rem] block text-[0.8rem] font-normal tracking-[0.13em]">
-          KATHMANDU / NP
+          BIRATNAGAR / NP
         </strong>
         <small className="mt-[0.35rem] block text-[0.46rem] tracking-[0.06em] text-white/64">
           BASE ALT. 1,400 M · UTC +05:45

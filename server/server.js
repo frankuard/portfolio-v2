@@ -5,9 +5,10 @@ import connectDB from './src/config/db.js'
 import portfolioRoutes from './src/routes/portfolio.js'
 
 const app = express()
+app.set('trust proxy', 1)
 
 app.use(cors({ origin: process.env.CLIENT_URL || 'http://localhost:5173' }))
-app.use(express.json())
+app.use(express.json({ limit: '20kb' }))
 
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }))
 app.use('/api', portfolioRoutes)

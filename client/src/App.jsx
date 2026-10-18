@@ -9,13 +9,16 @@ import Recognition from './sections/Recognition/Recognition'
 import useReveal from './hooks/useReveal'
 import Contact from './sections/Contact/Contact'
 import Stack from './sections/Stack/Stack'
-
+import GlobalBirds from './components/effects/GlobalBirds'
+import GlobalMountains from './components/effects/GlobalMountains'
 
 const App = () => {
   useReveal()
 
   return (
     <div className="overflow-x-clip">
+      <GlobalMountains />
+      <GlobalBirds />
       <SiteNav />
       <main>
         <Hero />

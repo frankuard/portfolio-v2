@@ -6,7 +6,7 @@ import AmbientBirds from '../../components/effects/AmbientBirds'
 import AboutTerminal from './AboutTerminal'
 
 const paragraph =
-  'mb-5 text-[length:clamp(1.1rem,1.4vw,1.3rem)] leading-[1.7] text-[#744838]'
+  'mb-5 text-[length:clamp(1.1rem,1.4vw,1.3rem)] leading-[1.7] text-[#4a2418]'
 
 const About = () => {
   return (

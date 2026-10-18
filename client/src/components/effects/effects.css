@@ -41,3 +41,10 @@
 @media (prefers-reduced-motion: reduce) {
   .mountain-world { opacity: 1; transform: none; }
 }
+
+/* ===== GlobalMountains (faded copy on all pages after the hero) ===== */
+.global-mountains { --mountain-fade: 1; --mountain-shift: 0px; --mountain-scale: 1; position: fixed; z-index: 2; inset: 0; opacity: 0; transition: opacity 900ms ease; pointer-events: none; }
+.global-mountains.is-away { opacity: 0.1; }
+
+/* ===== Darker theme from About downward (front page untouched) ===== */
+main > :not(:first-child) { background-color: #ddcbbb; background-blend-mode: multiply; }

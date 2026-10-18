@@ -31,7 +31,7 @@ const Projects = () => {
             {projects.map((item) => (
               <article
                 key={item._id}
-                className="group overflow-hidden rounded-[1.25rem] border border-line bg-[rgb(210_184_164/85%)] shadow-[0_1.2rem_3rem_rgb(70_35_25/10%)] transition-[translate,box-shadow] duration-[350ms] ease-[cubic-bezier(0.2,0.75,0.25,1)] hover:-translate-y-1 hover:shadow-[0_1.8rem_4rem_rgb(70_35_25/16%)]"
+                className="group overflow-hidden rounded-[1.25rem] border border-line bg-[rgb(196_167_145/88%)] shadow-[0_1.2rem_3rem_rgb(70_35_25/10%)] transition-[translate,box-shadow] duration-[350ms] ease-[cubic-bezier(0.2,0.75,0.25,1)] hover:-translate-y-1 hover:shadow-[0_1.8rem_4rem_rgb(70_35_25/16%)]"
               >
                 {/* screenshot, or a colored block with the first letters if there is no image */}
                 <div className="aspect-[16/7] overflow-hidden border-b border-line">
@@ -57,7 +57,7 @@ const Projects = () => {
                   <h3 className="m-0 text-[length:clamp(1.2rem,1.6vw,1.6rem)] leading-[1.1] font-light tracking-[-0.03em]">
                     {item.title}
                   </h3>
-                  <p className="mt-2 mb-0 text-[0.8rem] leading-[1.6] text-[#765344]">
+                  <p className="mt-2 mb-0 text-[0.8rem] leading-[1.6] text-[#4a2418]">
                     {item.description}
                   </p>
 

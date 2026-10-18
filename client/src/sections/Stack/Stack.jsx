@@ -20,12 +20,12 @@ const Stack = () => {
 
         <div className="flex items-end justify-between gap-12 pt-10 pb-8 max-md:flex-col max-md:items-start max-md:gap-6 max-md:py-8">
           <div>
-            <Eyebrow>Development workflow</Eyebrow>
+      
             <Display className="mt-4 max-w-208 text-[length:clamp(2.6rem,4.8vw,5rem)]">
               Tools I use to <em>ship products.</em>
             </Display>
           </div>
-          <p className="m-0 max-w-88 text-[0.82rem] leading-[1.75] text-[#765344]">
+          <p className="m-0 max-w-88 text-[0.82rem] leading-[1.75] text-[#4a2418]">
             A full-stack workflow from interface development to data, infrastructure, and delivery.
           </p>
         </div>

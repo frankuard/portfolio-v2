@@ -5,7 +5,7 @@ import './About.css'
 const commands = [
   { cmd: 'POST /api/projects', result: '201 created · 84ms' },
   { cmd: 'docker compose up -d', result: '3 services running' },
-  { cmd: 'pnpm build', result: 'compiled successfully', cursor: true },
+  { cmd: 'npm build', result: 'compiled successfully', cursor: true },
 ]
 
 const AboutTerminal = () => {
@@ -24,7 +24,7 @@ const AboutTerminal = () => {
         <span className="size-[0.45rem] rounded-full bg-[#d66d4c]" />
         <span className="size-[0.45rem] rounded-full bg-[#f1b36f]" />
         <span className="size-[0.45rem] rounded-full bg-[#9a432f]" />
-        <code className="ml-auto text-[0.48rem] text-[#daa88f]">dev@local:~/workspace</code>
+        <code className="ml-auto text-[0.48rem] text-[#daa88f]">dev@frankuard:~/workspace</code>
       </div>
 
       <div className="min-h-72 p-8">

@@ -66,7 +66,7 @@ const Experience = () => {
                 <p className="m-0 font-mono text-[length:clamp(0.74rem,0.9vw,0.86rem)] leading-normal tracking-[0.08em] text-(--alpine-600) uppercase">
                   {item.role}
                 </p>
-                <p className="relative z-1 mt-4 mb-0 max-w-120 text-[0.82rem] leading-[1.7] text-[#765344]">
+                <p className="relative z-1 mt-4 mb-0 max-w-120 text-[0.82rem] leading-[1.7] text-[#4a2418]">
                   {item.copy}
                 </p>
               </article>
