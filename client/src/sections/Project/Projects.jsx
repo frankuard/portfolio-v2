@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="reveal relative bg-[linear-gradient(145deg,#e8d9ca,#d6bfaa)] py-[clamp(3.5rem,6vw,6rem)]"
+      className="reveal relative bg-[linear-gradient(145deg,#dbc7b5,#c6ab95)] py-[clamp(3.5rem,6vw,6rem)]"
     >
       <AmbientBirds side="right" />
 
@@ -31,7 +31,7 @@ const Projects = () => {
             {projects.map((item) => (
               <article
                 key={item._id}
-                className="group overflow-hidden rounded-[1.25rem] border border-line bg-[rgb(226_205_187/82%)] shadow-[0_1.2rem_3rem_rgb(70_35_25/10%)] transition-[translate,box-shadow] duration-[350ms] ease-[cubic-bezier(0.2,0.75,0.25,1)] hover:-translate-y-1 hover:shadow-[0_1.8rem_4rem_rgb(70_35_25/16%)]"
+                className="group overflow-hidden rounded-[1.25rem] border border-line bg-[rgb(210_184_164/85%)] shadow-[0_1.2rem_3rem_rgb(70_35_25/10%)] transition-[translate,box-shadow] duration-[350ms] ease-[cubic-bezier(0.2,0.75,0.25,1)] hover:-translate-y-1 hover:shadow-[0_1.8rem_4rem_rgb(70_35_25/16%)]"
               >
                 {/* screenshot, or a colored block with the first letters if there is no image */}
                 <div className="aspect-[16/7] overflow-hidden border-b border-line">

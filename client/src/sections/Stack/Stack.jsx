@@ -11,7 +11,7 @@ const Stack = () => {
   return (
     <section
       id="stack"
-      className="reveal relative bg-[linear-gradient(145deg,#e5d5c6,#d2baa5)] py-[clamp(3.5rem,6vw,6rem)]"
+      className="reveal relative bg-[linear-gradient(145deg,#d8c3b0,#c3a790)] py-[clamp(3.5rem,6vw,6rem)]"
     >
       <AmbientBirds side="left" />
 

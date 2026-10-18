@@ -27,7 +27,7 @@ const Recognition = () => {
             {recognitions.map((item, index) => (
               <article
                 key={item._id}
-                className="relative min-h-72 rounded-[1.25rem] border border-[rgb(70_35_25/28%)] bg-[rgb(226_205_187/82%)] p-6 pb-12 shadow-[0_1.2rem_3rem_rgb(70_35_25/10%)] max-md:min-h-56"
+                className="relative min-h-72 rounded-[1.25rem] border border-[rgb(70_35_25/28%)] bg-[rgb(210_184_164/85%)] p-6 pb-12 shadow-[0_1.2rem_3rem_rgb(70_35_25/10%)] max-md:min-h-56"
               >
                 {item.image && (
                   <div className="mb-5 aspect-[4/3] overflow-hidden rounded-xl border border-line">
