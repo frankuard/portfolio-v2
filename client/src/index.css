@@ -68,3 +68,16 @@
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Sections fade/slide in when useReveal adds "is-visible" */
+.reveal {
+  content-visibility: auto;
+  opacity: 0;
+  transform: translateY(3rem);
+  transition: opacity 800ms cubic-bezier(0.2, 0.75, 0.25, 1), transform 900ms cubic-bezier(0.2, 0.75, 0.25, 1);
+}
+.reveal.is-visible { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; }
+}

@@ -1,0 +1,3 @@
+/* Keyframes only; everything else is Tailwind classes */
+@keyframes terminal-orbit { to { transform: rotate(360deg); } }
+@keyframes cursor-blink { 50% { opacity: 0; } }
