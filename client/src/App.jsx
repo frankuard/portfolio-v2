@@ -5,6 +5,7 @@ import About from './sections/About/About'
 import Experience from './sections/Experience/Experience'
 import Recognition from './sections/Recognition/Recognition'
 import useReveal from './hooks/useReveal'
+import Contact from './sections/Contact/Contact'
 import Stack from './sections/Stack/Stack'
 
 
@@ -21,7 +22,7 @@ const App = () => {
         <Recognition />
         <Stack />
       </main>
-      {/* next: Contact footer */}
+      <Contact />
     </div>
   )
 }
