@@ -5,6 +5,8 @@ import About from './sections/About/About'
 import Experience from './sections/Experience/Experience'
 import Recognition from './sections/Recognition/Recognition'
 import useReveal from './hooks/useReveal'
+import Stack from './sections/Stack/Stack'
+
 
 const App = () => {
   useReveal()
@@ -17,8 +19,9 @@ const App = () => {
         <About />
         <Experience />
         <Recognition />
-        {/* next: Stack, then Contact in the footer */}
+        <Stack />
       </main>
+      {/* next: Contact footer */}
     </div>
   )
 }
