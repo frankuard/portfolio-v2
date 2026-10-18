@@ -4,8 +4,11 @@ const BASE = 'https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons'
 // 1. Upload the logo to ImageKit and copy its URL.
 // 2. Add a line below. The name must be lowercase and match the tag in seed.js.
 const customLogos = {
-  prisma: 'https://ik.imagekit.io/your_id/prisma.png?tr=w-64',
-  'rest api': 'https://ik.imagekit.io/your_id/rest-api.png?tr=w-64',
+  'socket.io': 'https://ik.imagekit.io/ltf9bjszh/Portfolio/socketio.png?tr=w-64',
+  fastapi: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/fastapi.png?tr=w-64',
+  jwt: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/jwt.png?tr=w-64',
+  chromadb: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/chromadb.webp?tr=w-64',
+  tavily: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/tavily.png?tr=w-64',
 }
 
 const slugs = {

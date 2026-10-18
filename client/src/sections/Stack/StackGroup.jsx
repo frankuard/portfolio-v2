@@ -25,9 +25,7 @@ const StackGroup = ({ group }) => {
             className="absolute top-1/2 right-16 left-16 h-0.5 bg-(--sky-700) shadow-[0_0_1rem_rgb(36_91_158/28%)] before:absolute before:top-1/2 before:-left-[0.7rem] before:aspect-square before:w-[0.7rem] before:-translate-y-1/2 before:rounded-full before:border-2 before:border-[color:var(--sky-700)] before:bg-[#d8c1ae] before:content-[''] after:absolute after:top-1/2 after:-right-[0.7rem] after:aspect-square after:w-[0.7rem] after:-translate-y-1/2 after:rounded-full after:border-2 after:border-[color:var(--sky-700)] after:bg-[#d8c1ae] after:content-['']"
             aria-hidden="true"
           >
-            <span className="absolute top-[0.8rem] left-1/2 -translate-x-1/2 bg-[#d8c1ae] px-[0.6rem] py-[0.35rem] font-mono text-[0.5rem] text-(--alpine-600) uppercase">
-              {group.name.replace(' stack', '')}.bus
-            </span>
+            
           </div>
 
           {group.nodes.map((node, i) => {

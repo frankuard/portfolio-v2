@@ -6,12 +6,12 @@ export const stackGroups = [
     name: 'Libraries & Frameworks',
     copy: 'Frameworks and runtimes for interfaces and servers.',
     nodes: [
-      { name: 'React', mark: 'Re', icon: '' },
-      { name: 'Node.js', mark: 'No', icon: '' },
-      { name: 'Express', mark: 'Ex', icon: '' },
-      { name: 'Tailwind', mark: 'Tw', icon: '' },
-      { name: 'OpenCV', mark: 'cv', icon: '' },
-      { name: 'Scikit-Learn', mark: 'sci', icon: '' },
+      { name: 'React', mark: 'Re', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/react.png' },
+      { name: 'Node.js', mark: 'No', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/nodejs.png' },
+      { name: 'Express', mark: 'Ex', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/expresss.png' },
+      { name: 'Tailwind', mark: 'Tw', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/tailwind.png' },
+      { name: 'OpenCV', mark: 'cv', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/opencv.png' },
+      { name: 'Scikit-Learn', mark: 'sci', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/scikitlearn.png' },
     ],
   },
    {
@@ -19,11 +19,11 @@ export const stackGroups = [
     name: 'Languages',
     copy: 'The languages I write most of my code in.',
     nodes: [
-      { name: 'Javascript', mark: 'Re', icon: '' },
-      { name: 'Typescript', mark: 'TS', icon: '' },
-      { name: 'Python', mark: 'Py', icon: '' },
-      { name: 'PHP', mark: 'php', icon: '' },
-      { name: 'Java', mark: 'java', icon: '' },
+      { name: 'Javascript', mark: 'Re', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/js.png' },
+      { name: 'Typescript', mark: 'TS', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/ts.png' },
+      { name: 'Python', mark: 'Py', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/python.webp' },
+      { name: 'PHP', mark: 'php', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/php.webp' },
+      { name: 'Java', mark: 'java', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/jav.png' },
     ],
   },
   {
@@ -31,8 +31,8 @@ export const stackGroups = [
     name: 'Database',
     copy: 'Structured data, caching, schemas, and reliable persistence.',
     nodes: [
-      { name: 'MongoDB', mark: 'Mo', icon: '' },
-      { name: 'MySQL', mark: 'sql', icon: '' },
+      { name: 'MongoDB', mark: 'Mo', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/mongodv.png' },
+      { name: 'MySQL', mark: 'sql', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/sql.png' },
     ],
   },
   {
@@ -40,11 +40,11 @@ export const stackGroups = [
     name: 'Tools',
     copy: 'Tools for version control, testing, and delivery.',
     nodes: [
-       { name: 'Git', mark: 'Gi', icon: '' },
-      { name: 'GitHub', mark: 'GH', icon: '' },
-      { name: 'Docker', mark: 'Do', icon: '' },
-      { name: 'Postman', mark: 'Pm', icon: '' },
-      { name: 'Arch', mark: 'arch', icon: '' },
+       { name: 'Git', mark: 'Gi', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/git.png' },
+      { name: 'GitHub', mark: 'GH', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/github.png' },
+      { name: 'Docker', mark: 'Do', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/docker.png' },
+      { name: 'Postman', mark: 'Pm', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/postman.webp' },
+      { name: 'Arch', mark: 'arch', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/arch.png' },
     ],
   },
 ]
