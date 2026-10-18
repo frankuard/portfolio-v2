@@ -43,7 +43,7 @@ const Contact = () => {
       <AmbientBirds side="right" />
 
       <Container className="relative z-2">
-        <SectionIndex light number="05" label="Contact" aside="Start a conversation" />
+        <SectionIndex light number="06" label="Contact" aside="Start a conversation" />
 
         <div className="grid grid-cols-[minmax(0,0.9fr)_minmax(26rem,0.72fr)] items-start gap-[clamp(3rem,6vw,6rem)] pt-10 max-md:grid-cols-1 max-md:gap-10 max-md:pt-8">
           {/* left: heading, text, socials */}

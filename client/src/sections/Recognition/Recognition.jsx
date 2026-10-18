@@ -2,7 +2,7 @@ import React from 'react'
 import Container from '../../components/ui/Container'
 import SectionIndex from '../../components/layout/SectionIndex'
 import AmbientBirds from '../../components/effects/AmbientBirds'
-import ApiStatus from '../components/ui/ApiStatus'
+import ApiStatus from '../../components/ui/ApiStatus'
 import useApi from '../../hooks/useApi'
 
 const Recognition = () => {
@@ -15,7 +15,7 @@ const Recognition = () => {
       <AmbientBirds side="right" />
 
       <Container className="relative z-1">
-        <SectionIndex number="03" label="Recognition" />
+        <SectionIndex number="04" label="Recognition" />
 
         <div
           className="w-full pt-10 max-md:pt-8"
@@ -27,13 +27,28 @@ const Recognition = () => {
             {recognitions.map((item, index) => (
               <article
                 key={item._id}
-                className="relative min-h-72 rounded-[1.25rem] border border-[rgb(70_35_25/28%)] bg-[rgb(226_205_187/82%)] p-6 shadow-[0_1.2rem_3rem_rgb(70_35_25/10%)] max-md:min-h-56"
+                className="relative min-h-72 rounded-[1.25rem] border border-[rgb(70_35_25/28%)] bg-[rgb(226_205_187/82%)] p-6 pb-12 shadow-[0_1.2rem_3rem_rgb(70_35_25/10%)] max-md:min-h-56"
               >
+                {item.image && (
+                  <div className="mb-5 aspect-[4/3] overflow-hidden rounded-xl border border-line">
+                    <img
+                      src={item.image}
+                      alt={`${item.title}: ${item.description}`}
+                      loading="lazy"
+                      className="size-full object-cover"
+                    />
+                  </div>
+                )}
+
                 <span className="font-mono text-[0.68rem] tracking-[0.08em] text-(--alpine-600) uppercase">
                   {item.date}
                 </span>
 
-                <h3 className="mt-14 mb-3 max-w-72 text-[length:clamp(1.8rem,2.6vw,2.9rem)] leading-[1.08] font-light tracking-[-0.03em] max-md:mt-10">
+                <h3
+                  className={`mb-3 max-w-72 text-[length:clamp(1.8rem,2.6vw,2.9rem)] leading-[1.08] font-light tracking-[-0.03em] ${
+                    item.image ? 'mt-4' : 'mt-14 max-md:mt-10'
+                  }`}
+                >
                   {item.title}
                 </h3>
 

@@ -3,6 +3,7 @@ import SiteNav from './components/layout/SiteNav'
 import Hero from './sections/Hero/Hero'
 import About from './sections/About/About'
 import Experience from './sections/Experience/Experience'
+import Education from './sections/Education/Education'
 import Recognition from './sections/Recognition/Recognition'
 import useReveal from './hooks/useReveal'
 import Contact from './sections/Contact/Contact'
@@ -19,6 +20,7 @@ const App = () => {
         <Hero />
         <About />
         <Experience />
+        <Education />
         <Recognition />
         <Stack />
       </main>

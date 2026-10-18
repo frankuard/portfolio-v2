@@ -16,7 +16,7 @@ const Stack = () => {
       <AmbientBirds side="left" />
 
       <Container className="relative z-1">
-        <SectionIndex number="04" label="Technology stack" aside="Core tools" />
+        <SectionIndex number="05" label="Technology stack" aside="Core tools" />
 
         <div className="flex items-end justify-between gap-12 pt-10 pb-8 max-md:flex-col max-md:items-start max-md:gap-6 max-md:py-8">
           <div>
