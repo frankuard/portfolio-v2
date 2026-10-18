@@ -11,7 +11,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="reveal relative bg-[linear-gradient(145deg,#d8c0ab,#cbb09a)] py-[clamp(3.5rem,6vw,6rem)]"
+      className="reveal relative bg-[linear-gradient(145deg,#d8c0ab,#cbb09a)] pt-[clamp(1.5rem,2.5vw,2.5rem)] pb-[clamp(3.5rem,6vw,6rem)]"
     >
       <AmbientBirds side="left" />
 

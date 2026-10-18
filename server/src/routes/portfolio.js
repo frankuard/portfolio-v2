@@ -4,6 +4,7 @@ import Recognition from '../models/Recognition.js'
 import Education from '../models/Education.js'
 import Project from '../models/Project.js'
 
+
 const router = Router()
 
 router.get('/experience', async (req, res) => {
@@ -37,5 +38,6 @@ router.get('/projects', async (req, res) => {
     res.status(500).json({ message: 'Could not load projects' })
   }
 })
+
 
 export default router

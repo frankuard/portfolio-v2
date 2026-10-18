@@ -123,6 +123,8 @@ const recognitions = [
 
 ]
 
+
+
 // =======================================================
 
 const seed = async () => {
@@ -130,11 +132,13 @@ const seed = async () => {
     await mongoose.connect(process.env.MONGODB_URI)
 
     await Experience.deleteMany({})
+    await Project.deleteMany({})
+    await Education.deleteMany({})
     await Recognition.deleteMany({})
-    await Education.insertMany(education)
-    await Project.insertMany(projects)
 
     await Experience.insertMany(experience)
+    await Project.insertMany(projects)
+    await Education.insertMany(education)
     await Recognition.insertMany(recognitions)
 
     console.log(

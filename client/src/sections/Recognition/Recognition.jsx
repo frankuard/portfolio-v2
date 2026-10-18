@@ -15,7 +15,7 @@ const Recognition = () => {
       <AmbientBirds side="right" />
 
       <Container className="relative z-1">
-        <SectionIndex number="04" label="Recognition" />
+        <SectionIndex number="05" label="Recognition" />
 
         <div
           className="w-full pt-10 max-md:pt-8"

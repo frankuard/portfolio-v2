@@ -12,7 +12,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="reveal relative min-h-[62rem] overflow-hidden bg-[linear-gradient(155deg,#eadccf,#d9c1ad)] py-[clamp(3.5rem,6vw,6rem)] before:absolute before:-top-28 before:-right-[8%] before:-left-[8%] before:h-72 before:bg-alpine-600 before:opacity-[0.08] before:content-[''] before:[clip-path:polygon(0_75%,14%_48%,26%_68%,42%_34%,55%_64%,72%_42%,87%_70%,100%_51%,100%_100%,0_100%)]"
+      className="reveal relative min-h-0 overflow-hidden bg-[linear-gradient(155deg,#eadccf,#d9c1ad)] pt-[clamp(3.5rem,6vw,6rem)] pb-[clamp(2.5rem,4vw,4rem)] before:absolute before:-top-28 before:-right-[8%] before:-left-[8%] before:h-72 before:bg-alpine-600 before:opacity-[0.08] before:content-[''] before:[clip-path:polygon(0_75%,14%_48%,26%_68%,42%_34%,55%_64%,72%_42%,87%_70%,100%_51%,100%_100%,0_100%)]"
     >
       <AmbientBirds side="right" />
 

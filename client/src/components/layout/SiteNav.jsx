@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import IconButton from '../ui/IconButton'
 
-const links = ['About', 'Experience', 'Education', 'Recognition', 'Stack', 'Contact']
+const links = ['About', 'Experience', 'Projects', 'Education', 'Recognition', 'Stack', 'Contact']
 
 const SiteNav = () => {
   const [menuOpen, setMenuOpen] = useState(false)

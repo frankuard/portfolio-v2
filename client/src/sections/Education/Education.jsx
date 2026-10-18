@@ -16,7 +16,7 @@ const Education = () => {
       <AmbientBirds side="right" />
 
       <Container className="relative z-1">
-        <SectionIndex number="03" label="Education" aside="Academics" />
+        <SectionIndex number="04" label="Education" aside="Academics" />
 
         <div className="pt-6 max-md:pt-4">
           <ApiStatus
