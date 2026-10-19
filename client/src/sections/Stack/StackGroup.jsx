@@ -19,7 +19,7 @@ const StackGroup = ({ group }) => {
 
       {/* the map scrolls sideways inside the card on small screens (scrollbar hidden) */}
       <div className="overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        <div className="relative flex h-64 min-w-208 items-center justify-around px-12 max-md:min-w-168">
+        <div className="relative flex h-64 w-max min-w-[max(100%,52rem)] items-center justify-around gap-6 px-12 max-md:min-w-[max(100%,42rem)]">
           {/* the glowing bus line, centered exactly on the middle of the card */}
           <div
             className="absolute top-1/2 right-16 left-16 h-0.5 -translate-y-1/2 bg-(--sky-700) shadow-[0_0_1rem_rgb(36_91_158/28%)] before:absolute before:top-1/2 before:-left-[0.7rem] before:aspect-square before:w-[0.7rem] before:-translate-y-1/2 before:rounded-full before:border-2 before:border-[color:var(--sky-700)] before:bg-[#d8c1ae] before:content-[''] after:absolute after:top-1/2 after:-right-[0.7rem] after:aspect-square after:w-[0.7rem] after:-translate-y-1/2 after:rounded-full after:border-2 after:border-[color:var(--sky-700)] after:bg-[#d8c1ae] after:content-['']"
