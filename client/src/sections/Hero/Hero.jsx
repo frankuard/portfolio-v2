@@ -40,7 +40,7 @@ const Hero = () => {
 
         <div className="mx-auto mt-[0.35rem] flex w-[min(42rem,100%)] flex-col items-center gap-6 max-md:w-full">
           <p className="m-0 max-w-[31rem] text-center text-base leading-[1.75] font-light ">
-            I build reliable web products across frontend, backend, databases, and deployment.
+            I’m an aspiring AI/ML engineer and full-stack developer passionate about building intelligent applications and exploring emerging technologies.
           </p>
 
           <div className="flex flex-none gap-6 max-md:gap-3">
