@@ -12,6 +12,10 @@ export const stackGroups = [
       { name: 'Tailwind', mark: 'Tw', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/tailwind.png' },
       { name: 'OpenCV', mark: 'cv', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/opencv.png' },
       { name: 'Scikit-Learn', mark: 'sci', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/scikitlearn.png' },
+      { name: 'Langchain', mark: 'lang', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/laangchain.webp' },
+      { name: 'NumPy', mark: 'numpy', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/numpy.png' },
+      { name: 'Matplotlib', mark: 'mat', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/mtplot.png' },
+      { name: 'Beautiful Soup', mark: 'bs', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/beautifulsoup.png' },
     ],
   },
    {
@@ -24,6 +28,7 @@ export const stackGroups = [
       { name: 'Python', mark: 'Py', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/python.webp' },
       { name: 'PHP', mark: 'php', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/php.webp' },
       { name: 'Java', mark: 'java', icon: 'https://ik.imagekit.io/ltf9bjszh/Portfolio/jav.png' },
+      
     ],
   },
   {

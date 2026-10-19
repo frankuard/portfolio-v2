@@ -22,12 +22,10 @@ const About = () => {
         <div className="grid grid-cols-[1fr_0.42fr] gap-[6vw] pt-10 max-md:grid-cols-1 max-md:gap-10 max-md:pt-8">
           <div className="max-w-xl pt-8 pl-[5vw] max-md:pt-0 max-md:pl-0">
             <p className={paragraph}>
-              I’m Roshan Karki, a full-stack developer and founder of AI Horizon. I build practical
-              digital products with clean interfaces and dependable systems.
+             I’m Roshan Karki, a computer science student and aspiring AI/ML engineer with a strong interest in full-stack development and emerging technologies. 
             </p>
             <p className={paragraph}>
-              My work covers React applications, backend services, databases, API integrations,
-              and production deployment.
+             I build practical applications, explore intelligent systems, and turn ideas into working projects while continuously expanding my skills across software development and machine learning.
             </p>
             <TextLink href="#experience" className="mt-3">
               View experience
