@@ -9,7 +9,7 @@ import './Hero.css'
 
 // Shared look of the two pill buttons
 const buttonBase =
-  'min-w-[9.5rem] justify-center rounded-[3rem] border border-white/70 px-[1.25rem] py-[0.95rem] font-mono text-[0.74rem] font-semibold tracking-[0.06em] uppercase backdrop-blur-[0.75rem] transition-[color,background-color,border-color,transform] duration-250 hover:-translate-y-[0.2rem] max-md:min-w-auto max-md:px-4 max-md:py-[0.8rem]'
+  'min-w-[9.5rem] justify-center rounded-[3rem] border border-white/70 px-[1.25rem] py-[0.95rem] font-mono text-[0.74rem] font-semibold tracking-[0.06em] uppercase backdrop-blur-[0.75rem] transition-[color,background-color,border-color,translate] duration-300 ease-out hover:-translate-y-[0.2rem] max-md:min-w-auto max-md:px-4 max-md:py-[0.8rem]'
 
 const Hero = () => {
   const heroRef = useRef(null)
